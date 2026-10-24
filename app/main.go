@@ -16,7 +16,7 @@ func main() {
 		env = "local"
 	}
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "hello from go ci/cd, env=%s, version=%s\n", env, version)
+		fmt.Fprintf(w, "test pr,hello from go ci/cd, env=%s, version=%s\n", env, version)
 	})
 	http.HandleFunc("/healthz", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
