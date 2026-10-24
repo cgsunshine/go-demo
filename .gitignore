@@ -1,4 +1,18 @@
+# binaries / IDE
 *.exe
 *.test
 .idea/
 .vscode/
+*.swp
+.DS_Store
+
+# local CI simulation scripts (real pipeline = GitHub Actions)
+pipeline.ps1
+pipeline-env.ps1
+
+# local-only / already applied to kind cluster
+deploy/all.yaml
+deploy/argo-*.yaml
+
+# one-time setup notes
+SETUP-ACTIONS.md
